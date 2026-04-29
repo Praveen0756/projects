@@ -25,7 +25,7 @@ function dragOver(e) {
   e.preventDefault();
 }
 
-function dragEnter(e) {
+function drEnter(e) {
   e.preventDefault();
   this.className += " hovered";
 }
