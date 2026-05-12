@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Smart Fan</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+
+      <body>
+        <audio id="motorSound" loop>
+          <source src="motor.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio id="windSound" loop>
+          <source src="wind.mp3" type="audio/mp3" />
+        </audio>
+
+        <div class="scene">
+          <div class="fan-area">
+            <div class="fan" id="fan">
+              <div class="hub"></div>
+              <div class="blade b1"></div>
+              <div class="blade b2"></div>
+              <div class="blade b3"></div>
+              <div class="blade b4"></div>
+            </div>
+
+            <div class="mist"></div>
+
+            <div class="stand"></div>
+            <div class="base"></div>
+
+            <div class="wire"></div>
+          </div>
+
+          <div class="controls">
+            <div class="status">
+              <div class="led" id="led"></div>
+              <div class="bars"><span></span><span></span><span></span></div>
+            </div>
+
+            <button id="toggleBtn">Power ON</button>
+            <button id="speedBtn">Speed: 1</button>
+          </div>
+        </div>
+
+        <script src="script.js"></script>
+      </body>
+    </html>
+    <script src="app.js"></script>
+  </body>
+</html>
